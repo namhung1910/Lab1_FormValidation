@@ -1,0 +1,146 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+.plusUltra{
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #a5e1f8;
+}
+
+.header {
+
+  height: auto;
+  background-color: #f0f0f0;
+  padding: 10px 10px 10px 20px;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(to right, #05a5e4, #130cdc);
+  color: white;
+
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: clamp(320px, 90%, 860px);
+  border-radius: 28px;
+  background-color: rgb(255, 255, 255);
+  margin: 25px auto;
+  flex: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.main-container:hover {
+  box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.50);
+
+  transform: rotateX(6deg) rotateY(6deg);
+
+}
+@media screen and (max-width: 600px) {
+  .main-container {
+    max-width: 95%;
+    margin: 15px ;
+  }
+  .main_button {
+    width: 100%;
+
+  }
+  
+}
+
+.form-group{
+  width: 100%;
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+  transition: 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  border-color:  #05a5e4;
+  outline: none;
+}
+input[type="text"]:hover,
+input[type="date"]:hover,
+textarea:hover {
+  
+  transform: scale(1.02);
+}
+.button{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.main_button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #05a5e4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  
+}
+.main_button:hover {
+  background-color: #0a03e4;
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+
+
+.top-header{
+  border-radius: 0 0 20px 20px;
+  padding: 15px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.40);
+  height: auto;
+  background-color: #63bae6;
+  color: white;
+  text-align: center;
+}
+
+.fa-circle-dot{
+
+  font-size: 18px;
+}
+.fa-user{
+  font-size: 18px;
+}
+.footer {
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.40);
+  height: auto;
+  background-color: #63bae6;
+  color: white;
+  text-align: center;
+}

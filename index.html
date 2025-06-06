@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điền thông tin</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="plusUltra">
+        <div class="top-header">
+            <i class="fa-solid fa-circle-dot"></i>
+        </div>
+
+        <div class="main-container">
+            <div class="header">
+                <div class="header-title">
+                    <i class="fa-solid fa-user"></i> <h1>Thông tin cá nhân</h1>
+                </div>
+                <p>Vui lòng điền đầy đủ các thông tin</p>
+            </div>
+            <div class="content">
+                <form>
+                    <div class="form-group">
+                        <label for="hoTen">Họ tên </label></br>
+                        <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required></br>
+                        <label for="email">Email</label></br>
+                        <input type="text" id="email" name="email" placeholder="abc@example.com" required></br>
+                        <label for="soDT">Số điện thoại</label></br>
+                        <input type="text" id="tel" name="tel" placeholder="0123456789" required></br>
+                        <label for="diaChi">Địa chỉ</label></br>
+                        <input type="text" id="address" name="address" placeholder="Thái Bình" required></br>
+                        <label for="ngaySinh">Ngày sinh</label></br>
+                        <input type="date" id="date" name="date" required> </br>
+
+                        <!-- Giới tính -->
+                        <label for="GioiTinh">Chọn giới tính</label> </br> 
+                        <label for="namGioi">Nam</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="nuGioi">Nữ</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="khacGioi">Khác</label>
+                        <input type="radio" id="lgbt" name="gender" value="lgbt"></br>
+
+                        <!-- Qúa trình học tập -->
+                        <label for="QuaTrinhHoc">Quá trình học tập</label></br>
+                        <textarea name="QuaTrinhHoc" id="QuaTrinhHoc" placeholder="Trường Đại học Đại Nam, ngành Công nghệ thông tin"></textarea></br>
+
+                        <!--Sở thích-->
+                        <label for="SoThich">Sở thích</label></br>
+                        <textarea name="SoThich" id="SoThich" placeholder="Đá bóng, nghe nhạc, v.v"></textarea></br>
+
+                        <!--gửi thông tin-->
+                        <div class="button">
+                            <button class="main_button" type="submit"><i class="fa-solid fa-paper-plane" style="color: #ffffff;"> </i> Lưu thông tin</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 -  Nguyễn Nam Hưng</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
